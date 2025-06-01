@@ -1,0 +1,550 @@
+{
+  "uuid": "f8d6a798-e037-47a7-a562-00ca71e5fe38",
+  "lastMigration": 33,
+  "name": "Trial",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "8672fd7b-6f3f-4940-a9f2-4181436275c8",
+      "type": "crud",
+      "documentation": "",
+      "method": "",
+      "endpoint": "faculty",
+      "responses": [
+        {
+          "uuid": "b45784f4-3075-4b14-b755-b859597e8be4",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "9112",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "747f9312-578f-4d8e-b196-f3f7cac6441b",
+      "type": "crud",
+      "documentation": "",
+      "method": "",
+      "endpoint": "students",
+      "responses": [
+        {
+          "uuid": "0f978191-1b40-4fb6-afdf-3cff3f7030af",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "zvbq",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "578f612b-fb4f-458b-b999-8db095db2033",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "programs",
+      "responses": [
+        {
+          "uuid": "963ddb83-386c-4828-90d1-ab449b63b89b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "mmhf",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "58b07b4d-f8c0-43c6-ab7d-a0c9784757fb",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "departments",
+      "responses": [
+        {
+          "uuid": "5351f8ac-9297-4846-8673-8c9b4ee2b6a3",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "euln",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "8ab5f221-c560-40c9-a363-2bb5a79f1942",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "faculty",
+      "responses": [
+        {
+          "uuid": "3789b225-8bda-42c3-931f-fa69c4c62bcf",
+          "body": "{\n  \"message\": \"Delete is not allowed for entire data.\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "9112",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c40b39af-50e9-4c00-b179-33c78c17b715",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "faculty",
+      "responses": [
+        {
+          "uuid": "159ae346-c2b6-4bd1-921f-87479e81d5a4",
+          "body": "{\n  \"message\": \"Update is not allowed for entire data.\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "4c6cd21e-14d6-4d15-bf91-81435a9c4349",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "faculty",
+      "responses": [
+        {
+          "uuid": "6a268fb7-a337-459b-84f6-8d1952bd9765",
+          "body": "{\n  \"message\": \"Faculty Created.\"\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "9112",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "facultySchema",
+              "invert": false,
+              "operator": "valid_json_schema"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "c73206d6-2f1d-4353-9644-d62fd7995b81",
+          "body": "{\n  \"message\": \"Invalid request payload.\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "fb54ee60-023b-4afe-86ab-a2fb8804bef0",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "students",
+      "responses": [
+        {
+          "uuid": "6624c4d7-e3e7-4965-b35f-ec709cbe0eda",
+          "body": "{\n  \"message\": \"Delete is not allowed for entire data.\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "267714b4-a855-46b9-95f5-24d20db2e674",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "students",
+      "responses": [
+        {
+          "uuid": "6d8aac0e-7f70-4e4f-9056-04dc9d213300",
+          "body": "{\n  \"message\": \"Update is not allowed for entire data.\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "2553cac3-b18f-48f9-a24d-44513e45e9da",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "students",
+      "responses": [
+        {
+          "uuid": "e1b31526-bc64-45b5-a466-98df1abf0f18",
+          "body": "{\n  \n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "0e7y",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "5f38622e-2735-48a4-8c63-d5f5aac68a0b",
+          "body": "{\n  \"message\": \"Invalid request payload\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "e58c5444-6229-41ea-ad3d-848962dc0731",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "designation",
+      "responses": [
+        {
+          "uuid": "c47c0bc0-2c25-4b6e-b35b-964b10131c6c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "eutx",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "8ab5f221-c560-40c9-a363-2bb5a79f1942"
+    },
+    {
+      "type": "route",
+      "uuid": "c40b39af-50e9-4c00-b179-33c78c17b715"
+    },
+    {
+      "type": "route",
+      "uuid": "4c6cd21e-14d6-4d15-bf91-81435a9c4349"
+    },
+    {
+      "type": "route",
+      "uuid": "8672fd7b-6f3f-4940-a9f2-4181436275c8"
+    },
+    {
+      "type": "route",
+      "uuid": "fb54ee60-023b-4afe-86ab-a2fb8804bef0"
+    },
+    {
+      "type": "route",
+      "uuid": "267714b4-a855-46b9-95f5-24d20db2e674"
+    },
+    {
+      "type": "route",
+      "uuid": "2553cac3-b18f-48f9-a24d-44513e45e9da"
+    },
+    {
+      "type": "route",
+      "uuid": "747f9312-578f-4d8e-b196-f3f7cac6441b"
+    },
+    {
+      "type": "route",
+      "uuid": "578f612b-fb4f-458b-b999-8db095db2033"
+    },
+    {
+      "type": "route",
+      "uuid": "58b07b4d-f8c0-43c6-ab7d-a0c9784757fb"
+    },
+    {
+      "type": "route",
+      "uuid": "e58c5444-6229-41ea-ad3d-848962dc0731"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "361f0456-ee77-4759-9c69-e5efc0645d12",
+      "id": "9112",
+      "name": "Faculty",
+      "documentation": "",
+      "value": "[\n  {{#repeat 10}}\n    {\n      \"id\": {{add @index 1}},\n      \"name\": \"{{faker 'person.firstName'}} {{faker 'person.lastName'}}\",\n      \"email\": \"{{faker 'internet.email'}}\",\n      \"date_of_birth\": \"{{date '1980-11-20' '2001-11-25' \"dd-MM-yyyy\"}}\",\n      \"contact\": \"+91{{int 7000000000 9999999999}}\",\n      \"department\": \"{{oneOf (array 'Computer Engineering' 'Information Technology' 'Mechatronics' 'Electronics and Computer Science')}}\",\n      \"designation\": \"{{oneOf (array 'Professor' 'Assistant Professor' 'Head Of Department' 'Admin Staff')}}\",\n      \"address\": \"{{faker 'location.streetAddress'}}, {{faker 'location.city'}}, {{faker 'location.country'}}\"\n    }\n    {{#unless @last}},{{/unless}}\n  {{/repeat}}\n]"
+    },
+    {
+      "uuid": "04464312-fb4d-4226-a88f-8aa92c921b7f",
+      "id": "zvbq",
+      "name": "Students",
+      "documentation": "",
+      "value": "[\n  {{#repeat 10}}\n    {\n      \"id\": {{add @index 1}},\n      \"name\": \"{{faker 'person.firstName'}} {{faker 'person.lastName'}}\",\n      \"email\": \"{{faker 'internet.email'}}\",\n      \"date_of_birth\": \"{{date '1980-11-20' '2001-11-25' \"dd-MM-yyyy\"}}\",\n      \"contact\": \"+91{{int 7000000000 9999999999}}\",\n      \"department\": \"{{oneOf (array 'Computer Engineering' 'Information Technology' 'Mechatronics' 'Electronics and Computer Science')}}\",\n      \"year\": \"{{oneOf (array 'FE' 'SE' 'TE' 'BE')}}\",\n      \"address\": \"{{faker 'location.streetAddress'}}, {{faker 'location.city'}}, {{faker 'location.country'}}\"\n    }\n    {{#unless @last}},{{/unless}}\n  {{/repeat}}\n]\n"
+    },
+    {
+      "uuid": "0a76cb46-f084-4071-883c-9d6246857142",
+      "id": "euln",
+      "name": "Department",
+      "documentation": "",
+      "value": "[\n  {\n    \"id\": 1,\n    \"short_name\": \"COMP\",\n    \"long_name\": \"Computer Engineering\"\n  },\n  {\n    \"id\": 2,\n    \"short_name\": \"IT\",\n    \"long_name\": \"Information Technology\"\n  },\n  {\n    \"id\": 3,\n    \"short_name\": \"MECH\",\n    \"long_name\": \"Mechatronics\"\n  },\n  {\n    \"id\": 4,\n    \"short_name\": \"ECS\",\n    \"long_name\": \"Electronics and Computer Science\"\n  }\n]\n"
+    },
+    {
+      "uuid": "d5dfb0c7-5d4a-4629-91f6-92296e430bb7",
+      "id": "mmhf",
+      "name": "Years",
+      "documentation": "",
+      "value": "[\n  {\n    \"id\": 1,\n    \"short_name\": \"FE\",\n    \"long_name\": \"First Year\"\n  },\n  {\n    \"id\": 2,\n    \"short_name\": \"SE\",\n    \"long_name\": \"Second Year\"\n  },\n  {\n    \"id\": 3,\n    \"short_name\": \"TE\",\n    \"long_name\": \"Third Year\"\n  },\n  {\n    \"id\": 4,\n    \"short_name\": \"BE\",\n    \"long_name\": \"Final Year\"\n  }\n]\n"
+    },
+    {
+      "uuid": "888e54e0-a7b2-4d36-93c6-6c0f1275da94",
+      "id": "eutx",
+      "name": "designation",
+      "documentation": "",
+      "value": "[\n  {\n    \"id\": 1,\n    \"long_name\": \"Admin Staff\"\n  },\n  {\n    \"id\": 2,\n    \"long_name\": \"Professor\"\n  },\n  {\n    \"id\": 3,\n    \"long_name\": \"Assistant Professor\"\n  },\n  {\n    \"id\": 4,\n    \"long_name\": \"Head of Department\"\n  }\n]\n"
+    },
+    {
+      "uuid": "8bb94de4-46eb-4b95-9d07-e4837303b947",
+      "id": "e4ou",
+      "name": "facultySchema",
+      "documentation": "",
+      "value": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\",\n      \"minLength\": 3\n    },\n    \"email\": {\n      \"type\": \"string\",\n      \"format\": \"email\"\n    },\n    \"date_of_birth\": {\n      \"type\": \"string\",\n      \"pattern\": \"^\\\\d{2}-\\\\d{2}-\\\\d{4}$\"\n    },\n    \"contact\": {\n      \"type\": \"string\",\n      \"pattern\": \"^\\\\+91\\\\d{10}$\"\n    },\n    \"department\": {\n      \"type\": \"string\",\n      \"enum\": [\"Computer Engineering\", \"Information Technology\", \"Mechatronics\", \"Electronics and Computer Science\"]\n    },\n    \"designation\": {\n      \"type\": \"string\",\n      \"enum\": [\"Professor\", \"Assistant Professor\", \"Head Of Department\", \"Admin Staff\"]\n    },\n    \"address\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\"name\", \"email\", \"date_of_birth\", \"contact\", \"department\", \"designation\", \"address\"],\n  \"additionalProperties\": false\n}"
+    },
+    {
+      "uuid": "55683934-97ee-4ad1-a6b7-d8a10acdbdfa",
+      "id": "0e7y",
+      "name": "studentsSchema",
+      "documentation": "",
+      "value": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\",\n      \"minLength\": 3\n    },\n    \"email\": {\n      \"type\": \"string\",\n      \"format\": \"email\"\n    },\n    \"date_of_birth\": {\n      \"type\": \"string\",\n      \"pattern\": \"^\\\\d{2}-\\\\d{2}-\\\\d{4}$\"\n    },\n    \"contact\": {\n      \"type\": \"string\",\n      \"pattern\": \"^\\\\+91\\\\d{10}$\"\n    },\n    \"department\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"Computer Engineering\",\n        \"Information Technology\",\n        \"Mechatronics\",\n        \"Electronics and Computer Science\"\n      ]\n    },\n    \"year\": {\n      \"type\": \"string\",\n      \"enum\": [\"FE\", \"SE\", \"TE\", \"BE\"]\n    },\n    \"address\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"name\",\n    \"email\",\n    \"date_of_birth\",\n    \"contact\",\n    \"department\",\n    \"year\",\n    \"address\"\n  ],\n  \"additionalProperties\": false\n}"
+    }
+  ],
+  "callbacks": []
+}
