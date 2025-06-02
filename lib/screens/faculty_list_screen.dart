@@ -25,6 +25,11 @@ class _FacultyListScreenState extends State<FacultyListScreen>
   @override
   void initState() {
     super.initState();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _showMockApiDialog();
+    });
+
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 500),
       vsync: this,
@@ -35,6 +40,7 @@ class _FacultyListScreenState extends State<FacultyListScreen>
     _fetchFaculties();
     _animationController.forward();
   }
+
 
   @override
   void dispose() {
@@ -169,6 +175,25 @@ class _FacultyListScreenState extends State<FacultyListScreen>
       _fetchFaculties();
     }
   }
+
+  void _showMockApiDialog() {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Notice'),
+        content: const Text(
+          'This app uses a MockAPI created by the developer for demo purposes.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('OK'),
+          ),
+        ],
+      ),
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {

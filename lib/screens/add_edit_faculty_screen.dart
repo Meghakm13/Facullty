@@ -84,7 +84,7 @@ class _AddEditFacultyScreenState extends State<AddEditFacultyScreen>
 
       setState(() => _isLoading = true);
       final faculty = Faculty(
-        id: widget.faculty?.id ?? 0,
+        id: widget.faculty?.id ?? '',
         name: nameController.text.trim(),
         email: emailController.text.trim(),
         dateOfBirth: dobController.text.trim(),
@@ -341,9 +341,10 @@ class _AddEditFacultyScreenState extends State<AddEditFacultyScreen>
                       if (val == null || val.isEmpty) {
                         return 'Please enter full name';
                       }
-                      if (!RegExp(r'^[a-zA-Z\s]+$').hasMatch(val)) {
-                        return 'Name must contain only letters';
+                      if (!RegExp(r'^[a-zA-Z.\s]+$').hasMatch(val)) {
+                        return 'Name can only contain letters, spaces, and periods';
                       }
+
                       return null;
                     },
                   ),

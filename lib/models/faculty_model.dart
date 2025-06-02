@@ -1,5 +1,5 @@
 class Faculty {
-  final int id;
+  final String id;
   final String name;
   final String email;
   final String dateOfBirth;
@@ -21,7 +21,7 @@ class Faculty {
 
   factory Faculty.fromJson(Map<String, dynamic> json) {
     return Faculty(
-      id: json['id'],
+      id: json['id'].toString(),
       name: json['name'],
       email: json['email'],
       dateOfBirth: json['date_of_birth'],
@@ -43,5 +43,24 @@ class Faculty {
       'designation': designation,
       'address': address,
     };
+  }
+
+  //  METHOD - For update requests (excludes ID)
+  Map<String, dynamic> toJsonForUpdate() {
+    return {
+      'name': name,
+      'email': email,
+      'date_of_birth': dateOfBirth,
+      'contact': contact,
+      'department': department,
+      'designation': designation,
+      'address': address,
+    };
+  }
+
+  // THIS METHOD - For debugging
+  @override
+  String toString() {
+    return 'Faculty{id: $id, name: $name, email: $email, dateOfBirth: $dateOfBirth, contact: $contact, department: $department, designation: $designation, address: $address}';
   }
 }
